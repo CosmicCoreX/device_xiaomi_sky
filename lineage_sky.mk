@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Configure full_base_telephony.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common Bliss configurations
+# Inherit common Axion configurations
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 $(call inherit-product, vendor/lineage/config/BoardConfigReservedSize.mk)
@@ -23,7 +23,14 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
-BLISS_BUILDTYPE := OFFICIAL
+AXION_CAMERA_REAR_INFO := 50,2
+AXION_CAMERA_FRONT_INFO := 8
+
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := Z_E_U_S
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Snapdragon_4_Gen_2
 
 ## Device identifier
 PRODUCT_DEVICE := sky
