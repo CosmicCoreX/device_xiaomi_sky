@@ -23,14 +23,11 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
+USE_RESERVED_SIZE := true
 AXION_CAMERA_REAR_INFO := 50,2
 AXION_CAMERA_FRONT_INFO := 8
-
-# Maintainer name (underscores become spaces in the UI)
 AXION_MAINTAINER := Z_E_U_S
-
-# Processor name (underscores become spaces)
-AXION_PROCESSOR := Snapdragon_4_Gen_2
+AXION_PROCESSOR := Snapdragon™_4_Gen_2
 
 ## Device identifier
 PRODUCT_DEVICE := sky
